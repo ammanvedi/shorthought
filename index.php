@@ -1,19 +1,25 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="ststyle.css">
+<link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
 <Title>Registration Form</Title>
 
 </head>
 <body>
-<h1>shorthought</h1>
+<h1>shorthought<span class="dot">.</span></h1>
 
-
+<div class="searchbar">
 <form method="post" action="index.php" enctype="multipart/form-data" >
-      Name  <input type="text" name="name" id="name"/></br>
-      Location <input type="text" name="location" id="location"/></br>
-      Thought <input type="text" name="thought" id="thought"/></br>
-      <input type="submit" name="submit" value="Share" />
+
+		  <input class="thoughtbar" type="text" name="thought" id="thought" placeholder="thought..."/>
+	      <input class="name" type="text" name="name" id="name" placeholder="name"/>
+	      <input class="location" type="text" name="location" id="location" placeholder="where are you?"/>
+	      <input class="share" type="submit" name="submit" value="Share!" />
+
 </form>
+</div>
+
+
 <?php
 date_default_timezone_set('GMT');
     // DB connection info
