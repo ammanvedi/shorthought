@@ -68,10 +68,10 @@ date_default_timezone_set('GMT');
     if(count($registrants) > 0) {
 
         foreach($registrants as $registrant) {
-        	echo "<div class=\"thought\"><span class=\"quotemark\"> \"</span>".$registrant['thought']."<span class=\"quotemark\"> \"</span></div>";
-            echo "<div class=\"author\">".$registrant['author']."</div>";
-            echo "<div class=\"locationout\">".$registrant['location']."</div>";
-            echo "<div class=\"created\">".$registrant['created']."</div>";
+        	echo "<div class=\"thought\"><span class=\"quotemark\"> \" </span>".$registrant['thought']."<span class=\"quotemark\"> \"</span> - ".$registrant['author']."</div>";
+         
+            echo "<div class=\"details\">from ".$registrant['location']."<br/> on ".$registrant['created']."</div>";
+            
             
         }
         
@@ -80,7 +80,7 @@ date_default_timezone_set('GMT');
     }
 ?>
 
-
+<a href="https://github.com/ammanvedi/shorthought"><div class="gitlink">view source on github<img src="res/git.png" width="30" height="30" /></div></a>
 
 
 </body>

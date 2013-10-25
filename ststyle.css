@@ -105,9 +105,8 @@ h3{
 }
 
 .created{
-	text-transform:uppercase;
-	font-size: 14px;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: 'Indie Flower', cursive;
+	font-size: 25px;
     font-weight: bold;
     padding: 0px;
     margin: 0px;
@@ -121,9 +120,8 @@ h3{
 }
 
 .author{
-	text-transform:uppercase;
-	font-size: 14px;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: 'Indie Flower', cursive;
+	font-size: 25px;
     font-weight: bold;
     padding: 0px;
     margin: 0px;
@@ -136,14 +134,13 @@ h3{
     color: #4C4D4F;
 }
 
-.locationout{
-	text-transform:uppercase;
-	font-size: 14px;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+.details{
+	font-family: 'Indie Flower', cursive;
+	font-size: 15px;
     font-weight: bold;
     padding: 0px;
     margin: 0px;
-    width: 200px;
+    width: 250px;
     height: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -152,6 +149,32 @@ h3{
     left: 300px;
     color: #4C4D4F;
 
+}
+
+.gitlink{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 100;
+    font-size: 15px;
+    text-decoration: none;
+    width: 200px;
+    height: 30px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 40px;
+
+}
+
+.gitlink img{
+	position: relative;
+	top:5px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	opacity: 0.7;
+}
+
+a{
+	text-decoration: none;
 }
 
 
