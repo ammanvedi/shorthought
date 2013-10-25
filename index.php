@@ -4,7 +4,7 @@
 <link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
-<Title>Registration Form</Title>
+<Title>shorthought</Title>
 
 </head>
 <body>
