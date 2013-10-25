@@ -2,6 +2,8 @@
 <head>
 <link rel="stylesheet" type="text/css" href="ststyle.css">
 <link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
 <Title>Registration Form</Title>
 
 </head>
@@ -13,7 +15,7 @@
 
 		  <input class="thoughtbar" type="text" name="thought" id="thought" placeholder="thought..."/>
 	      <input class="name" type="text" name="name" id="name" placeholder="name"/>
-	      <input class="location" type="text" name="location" id="location" placeholder="where are you?"/>
+	      <input class="location" type="text" name="location" id="location" placeholder="location"/>
 	      <input class="share" type="submit" name="submit" value="Share!" />
 
 </form>
@@ -64,21 +66,17 @@ date_default_timezone_set('GMT');
     $stmt = $conn->query($sql_select);
     $registrants = $stmt->fetchAll(); 
     if(count($registrants) > 0) {
-        echo "<h2>People who are registered:</h2>";
-        echo "<table>";
-        echo "<tr><th>Name</th>";
-        echo "<th>Email</th>";
-        echo "<th>Date</th>";
-        echo "<th>Company</th></tr>";
+
         foreach($registrants as $registrant) {
-            echo "<tr><td>".$registrant['author']."</td>";
-            echo "<td>".$registrant['location']."</td>";
-            echo "<td>".$registrant['created']."</td>";
-            echo "<td>".$registrant['thought']."</td></tr>";
+        	echo "<div class=\"thought\"><span class=\"quotemark\"> \"</span>".$registrant['thought']."<span class=\"quotemark\"> \"</span></div>";
+            echo "<div class=\"author\">".$registrant['author']."</div>";
+            echo "<div class=\"locationout\">".$registrant['location']."</div>";
+            echo "<div class=\"created\">".$registrant['created']."</div>";
+            
         }
-        echo "</table>";
+        
     } else {
-        echo "<h3>No one is currently registered.</h3>";
+        echo "<h3>Need More Statuses</h3>";
     }
 ?>
 
