@@ -76,7 +76,7 @@ date_default_timezone_set('GMT');
         }
         
     } else {
-        echo "<h3>Need More Statuses</h3>";
+        echo "<h3>Need More Statuses, DB empty</h3>";
     }
 ?>
 
