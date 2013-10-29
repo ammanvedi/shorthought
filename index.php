@@ -23,6 +23,11 @@
 
 
 <?php
+
+
+
+
+
 date_default_timezone_set('GMT');
     // DB connection info
     //TODO: Update the values for $host, $user, $pwd, and $db
@@ -61,8 +66,10 @@ date_default_timezone_set('GMT');
     }
     echo "<h3>sent!</h3>";
     }
-    // Retrieve data
-    $sql_select = "SELECT * FROM thoughts ORDER BY rand() LIMIT 1;";
+
+
+ 
+	 $sql_select = "SELECT * FROM thoughts ORDER BY rand() LIMIT 1;";
     $stmt = $conn->query($sql_select);
     $registrants = $stmt->fetchAll(); 
     if(count($registrants) > 0) {
@@ -78,9 +85,14 @@ date_default_timezone_set('GMT');
     } else {
         echo "<h3>Need More Statuses, DB empty</h3>";
     }
+
+ 
 ?>
 
 <a href="https://github.com/ammanvedi/shorthought"><div class="gitlink">view source on github<img src="res/git.png" width="30" height="30" /></div></a>
+
+
+
 
 
 </body>
